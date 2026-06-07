@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import exterior from "../assets/images/exterior.jpg";
-import kitchen from "../assets/images/kitchen.jpg";
+import inductionHob from "../assets/images/induction-hob.jpg";
+import bathroom from "../assets/images/bathroom.jpg";
+import desk from "../assets/images/desk.jpg";
 
 export interface Props {
   heading: string;
@@ -28,8 +30,22 @@ const { heading, paragraphs, note } = Astro.props;
       sizes="(max-width: 600px) 100vw, 50vw"
     />
     <Image
-      src={kitchen}
-      alt="Küche mit Arbeitsplatz"
+      src={inductionHob}
+      alt="Küche mit Induktionsherd"
+      loading="lazy"
+      widths={[400, 720]}
+      sizes="(max-width: 600px) 100vw, 50vw"
+    />
+    <Image
+      src={bathroom}
+      alt="Bad mit Dusche"
+      loading="lazy"
+      widths={[400, 720]}
+      sizes="(max-width: 600px) 100vw, 50vw"
+    />
+    <Image
+      src={desk}
+      alt="Arbeitsbereich"
       loading="lazy"
       widths={[400, 720]}
       sizes="(max-width: 600px) 100vw, 50vw"

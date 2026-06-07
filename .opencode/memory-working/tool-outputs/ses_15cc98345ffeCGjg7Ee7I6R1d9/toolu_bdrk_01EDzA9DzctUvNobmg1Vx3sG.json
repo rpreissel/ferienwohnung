@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01EDzA9DzctUvNobmg1Vx3sG",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/components/Description.astro</path>\n<type>file</type>\n<content>\n1: ---\n2: import { Image } from \"astro:assets\";\n3: import exterior from \"../assets/images/exterior.jpg\";\n4: import kitchen from \"../assets/images/kitchen.jpg\";\n5: \n6: export interface Props {\n7:   heading: string;\n8:   paragraphs: string[];\n9:   note: string;\n10: }\n11: \n12: const { heading, paragraphs, note } = Astro.props;\n13: ---\n14: \n15: <section class=\"section description-section\">\n16:   <div class=\"desc-text\">\n17:     <div class=\"section-label\">Über die Unterkunft</div>\n18:     <h2>{heading}</h2>\n19:     {paragraphs.map((p) => <p>{p}</p>)}\n20:     <p class=\"desc-note\">{note}</p>\n21:   </div>\n22:   <div class=\"desc-images\">\n23:     <Image\n24:       src={exterior}\n25:       alt=\"Außenansicht des Hauses\"\n26:       loading=\"lazy\"\n27:       widths={[400, 720]}\n28:       sizes=\"(max-width: 600px) 100vw, 50vw\"\n29:     />\n30:     <Image\n31:       src={kitchen}\n32:       alt=\"Küche mit Arbeitsplatz\"\n33:       loading=\"lazy\"\n34:       widths={[400, 720]}\n35:       sizes=\"(max-width: 600px) 100vw, 50vw\"\n36:     />\n37:   </div>\n38: </section>\n\n(End of file - total 38 lines)\n</content>",
+  "timestamp": 1780861525194
+}
