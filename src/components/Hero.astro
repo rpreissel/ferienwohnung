@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import livingRoom from "../assets/images/living-room.jpg";
+
+export interface Stat {
+  value: string;
+  label: string;
+}
+
+export interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  stats: Stat[];
+}
+
+const { eyebrow, title, subtitle, stats } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-image">
+    <Image
+      src={livingRoom}
+      alt="Helles Wohn-/Schlafzimmer mit TV und Dachschräge"
+      loading="eager"
+      widths={[720, 1080]}
+      sizes="(max-width: 860px) 100vw, 60vw"
+    />
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="hero-sub">{subtitle}</p>
+
+    <div class="hero-stats">
+      {stats.map((stat, i) => (
+        <>
+          <div class="stat">
+            <strong>{stat.value}</strong>
+            <span>{stat.label}</span>
+          </div>
+          {i < stats.length - 1 && <div class="stat-divider"></div>}
+        </>
+      ))}
+    </div>
+
+    <div class="hero-actions">
+      <a class="button primary" href="#kontakt">Jetzt unverbindlich anfragen</a>
+      <a class="button secondary" href="#ausstattung">Details ansehen</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+---
+export interface Amenity {
+  title: string;
+  text: string;
+  icon: string;
+}
+
+export interface Props {
+  amenities: Amenity[];
+}
+
+const { amenities } = Astro.props;
+
+const icons: Record<string, string> = {
+  kitchen: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2M3 6l3-4h12l3 4"/></svg>`,
+  bed: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>`,
+  bath: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4 3 4 3 3 5"/><path d="m15 6 2.5-2.5a1.5 1.5 0 0 1 1-.5C20 3 20 3 21 5"/><path d="M3 19h18"/><path d="M2 19a5 5 0 0 1 5-5h10a5 5 0 0 1 5 5v0"/></svg>`,
+  tv: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
+  washer: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="6" height="12" rx="2"/><path d="M8 9h4"/><path d="M8 12h4"/><path d="M8 15h4"/><rect x="14" y="6" width="8" height="12" rx="2"/></svg>`,
+  car: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>`,
+  desk: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`,
+};
+---
+
+<section id="ausstattung" class="section">
+  <div class="section-label">Ausstattung</div>
+  <h2>Alles was Sie brauchen</h2>
+  <div class="amenity-grid">
+    {amenities.map((a) => (
+      <div class="amenity">
+        <Fragment set:html={icons[a.icon] ?? icons.heart} />
+        <div>
+          <strong>{a.title}</strong>
+          <span>{a.text}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

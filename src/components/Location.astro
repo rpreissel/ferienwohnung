@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import exterior from "../assets/images/exterior.jpg";
+
+export interface Props {
+  heading: string;
+  text: string;
+  checklist: string[];
+}
+
+const { heading, text, checklist } = Astro.props;
+
+const checkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>`;
+---
+
+<section id="lage" class="section lage-section">
+  <div class="lage-text">
+    <div class="section-label">Lage</div>
+    <h2 set:html={heading} />
+    <p>{text}</p>
+    <ul class="checklist">
+      {checklist.map((item) => (
+        <li>
+          <Fragment set:html={checkIcon} />
+          {item}
+        </li>
+      ))}
+    </ul>
+  </div>
+  <div class="lage-image">
+    <Image
+      src={exterior}
+      alt="Außenansicht des Hauses in Wellingsbüttel"
+      loading="lazy"
+      widths={[600, 900]}
+      sizes="(max-width: 860px) 100vw, 50vw"
+    />
+  </div>
+</section>

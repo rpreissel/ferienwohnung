@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import livingRoom from "../assets/images/living-room.jpg";
+import bedroom from "../assets/images/bedroom.jpg";
+import kitchen from "../assets/images/kitchen.jpg";
+import dishwasher from "../assets/images/dishwasher.jpg";
+---
+
+<section class="gallery">
+  <Image
+    src={livingRoom}
+    alt="Wohn-/Schlafzimmer"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={bedroom}
+    alt="Schlafbereich"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={kitchen}
+    alt="Küche und Essplatz"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={dishwasher}
+    alt="Spülmaschine und Kühlschrank"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+</section>

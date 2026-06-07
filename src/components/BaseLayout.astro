@@ -1,0 +1,112 @@
+---
+import Footer from "./Footer.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Ferienwohnung Hamburg-Wellingsbüttel" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">Ferienwohnung Wellingsbüttel</a>
+      <nav class="menu">
+        <a href="/#ueberblick">Überblick</a>
+        <a href="/#ausstattung">Ausstattung</a>
+        <a href="/#lage">Lage</a>
+        <a href="/#kontakt">Kontakt</a>
+      </nav>
+      <a class="cta" href="/#kontakt">Jetzt anfragen</a>
+    </header>
+
+    <main class="legal-main">
+      <slot />
+    </main>
+
+    <Footer registrationNumber="52-0032149-23" />
+  </body>
+</html>
+
+<style>
+  .legal-main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem clamp(1rem, 4vw, 2.5rem) 4rem;
+  }
+
+  .legal-main :global(h1) {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+    color: var(--text);
+  }
+
+  .legal-main :global(.legal-intro) {
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .legal-main :global(h2) {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 2rem 0 0.5rem;
+    color: var(--text);
+  }
+
+  .legal-main :global(p),
+  .legal-main :global(address) {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-main :global(a) {
+    color: var(--brand);
+    text-decoration: underline;
+  }
+
+  .legal-main :global(a:hover) {
+    color: var(--brand-dark);
+  }
+
+  .legal-main :global(ul) {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding-left: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-main :global(.back-link) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--brand);
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+
+  .legal-main :global(.back-link:hover) {
+    color: var(--brand-dark);
+  }
+</style>

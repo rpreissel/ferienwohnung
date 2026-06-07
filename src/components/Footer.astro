@@ -1,0 +1,15 @@
+---
+export interface Props {
+  registrationNumber: string;
+}
+
+const { registrationNumber } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <p>© {year} Ferienwohnung Wellingsbüttel · Hamburg · Registrierung: {registrationNumber}</p>
+  <p class="footer-sub">
+    <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a>
+  </p>
+</footer>

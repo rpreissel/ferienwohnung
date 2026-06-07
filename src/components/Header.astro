@@ -1,0 +1,18 @@
+---
+export interface Props {
+  brandName: string;
+  email: string;
+}
+const { brandName, email } = Astro.props;
+---
+
+<header class="topbar">
+  <a class="brand" href="#top">{brandName}</a>
+  <nav class="menu">
+    <a href="#ueberblick">Überblick</a>
+    <a href="#ausstattung">Ausstattung</a>
+    <a href="#lage">Lage</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="cta" href="#kontakt">Jetzt anfragen</a>
+</header>
