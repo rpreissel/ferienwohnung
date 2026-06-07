@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01Q175E7M8yd2gtLwDPTt8Mn",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/pages/index.astro</path>\n<type>file</type>\n<content>\n28:     <Header brandName=\"Ferienwohnung Wellingsbüttel\" email={d.email} />\n29: \n30:     <main id=\"top\">\n31:       <Hero\n32:         eyebrow={d.eyebrow}\n33:         title={d.title}\n34:         subtitle={d.subtitle}\n35:         stats={d.stats}\n36:       />\n37: \n38:       <Highlights highlights={d.highlights} />\n39: \n40:       <Description\n41:         heading={d.description.heading}\n42:         paragraphs={d.description.paragraphs}\n43:         note={d.description.note}\n44:       />\n45: \n46:       <Gallery />\n47: \n48:       <Amenities amenities={d.amenities} />\n49: \n50:       <Location\n51:         heading={d.location.heading}\n52:         text={d.location.text}\n53:         checklist={d.location.checklist}\n54:       />\n55: \n56:       <Contact\n57:         heading={d.contact.heading}\n58:         text={d.contact.text}\n59:         email={d.email}\n60:       />\n61:     </main>\n62: \n63:     <Footer registrationNumber={d.registrationNumber} />\n64:   </body>\n65: </html>\n\n(End of file - total 65 lines)\n</content>",
+  "timestamp": 1780858710025
+}

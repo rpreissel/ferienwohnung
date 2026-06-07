@@ -12,9 +12,10 @@ export interface Props {
   title: string;
   subtitle: string;
   stats: Stat[];
+  pricing: { perNight: number; cleaning: number };
 }
 
-const { eyebrow, title, subtitle, stats } = Astro.props;
+const { eyebrow, title, subtitle, stats, pricing } = Astro.props;
 ---
 
 <section class="hero">
@@ -49,5 +50,57 @@ const { eyebrow, title, subtitle, stats } = Astro.props;
       <a class="button primary" href="#kontakt">Jetzt unverbindlich anfragen</a>
       <a class="button secondary" href="#ausstattung">Details ansehen</a>
     </div>
+
+    <div class="hero-pricing">
+      <div class="price-item">
+        <span class="price-amount">{pricing.perNight} €</span>
+        <span class="price-label">pro Nacht</span>
+      </div>
+      <div class="price-divider"></div>
+      <div class="price-item">
+        <span class="price-amount">{pricing.cleaning} €</span>
+        <span class="price-label">Endreinigung</span>
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+  .hero-pricing {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0.85rem 1rem;
+    background: var(--brand-light);
+    border-radius: var(--radius-sm);
+    margin-top: 0.5rem;
+  }
+
+  .price-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .price-amount {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+  }
+
+  .price-label {
+    font-size: 0.72rem;
+    color: var(--brand);
+    font-weight: 500;
+  }
+
+  .price-divider {
+    width: 1px;
+    height: 28px;
+    background: var(--brand);
+    opacity: 0.2;
+  }
+</style>

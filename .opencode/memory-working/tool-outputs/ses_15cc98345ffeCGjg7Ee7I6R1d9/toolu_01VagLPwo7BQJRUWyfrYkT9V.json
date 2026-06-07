@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01VagLPwo7BQJRUWyfrYkT9V",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "todowrite",
+  "fullOutput": "[\n  {\n    \"content\": \"Download Plus Jakarta Sans font files locally\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Download Bricolage Grotesque font files locally\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Create @font-face declarations in global.css\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Remove Google Fonts <link> tags from BaseLayout and index.astro\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Update Datenschutz page (remove Google Fonts mention)\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\"\n  },\n  {\n    \"content\": \"Test build\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  }\n]",
+  "timestamp": 1780855600365
+}

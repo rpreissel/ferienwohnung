@@ -1,0 +1,25 @@
+{
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "modelID": "claude-sonnet-4.6",
+  "providerID": "github-copilot",
+  "limits": {
+    "context": 1000000,
+    "input": 936000,
+    "output": 64000
+  },
+  "calculated": {
+    "maxOutputTokens": 32000,
+    "reserved": 20000,
+    "usable": 916000
+  },
+  "current": {
+    "totalTokens": 87703,
+    "pressure": 0.09574563318777292,
+    "level": "safe"
+  },
+  "thresholds": {
+    "moderate": 687000,
+    "high": 824400
+  },
+  "updatedAt": "2026-06-07T18:58:42.327Z"
+}

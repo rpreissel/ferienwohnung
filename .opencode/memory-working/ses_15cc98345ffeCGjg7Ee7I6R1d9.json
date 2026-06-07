@@ -1,0 +1,43 @@
+{
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "slots": {
+    "error": [],
+    "decision": [],
+    "todo": [],
+    "dependency": []
+  },
+  "pool": [
+    {
+      "id": "wm_1780854928305_edqlh2u",
+      "type": "file-path",
+      "content": "//fonts.go",
+      "source": "tool:read",
+      "timestamp": 1780855567287,
+      "relevanceScore": 7.031899062499999,
+      "mentions": 4,
+      "lastEventCounter": 6
+    },
+    {
+      "id": "wm_1780855574971_rlnfceu",
+      "type": "file-path",
+      "content": "//policies.go",
+      "source": "tool:read",
+      "timestamp": 1780855574971,
+      "relevanceScore": 1.35,
+      "mentions": 1,
+      "lastEventCounter": 6
+    },
+    {
+      "id": "wm_1780858675762_7kjvzwv",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/src/content/config.ts",
+      "source": "tool:read",
+      "timestamp": 1780858675762,
+      "relevanceScore": 1,
+      "mentions": 1,
+      "lastEventCounter": 6
+    }
+  ],
+  "eventCounter": 6,
+  "updatedAt": "2026-06-07T18:57:55.762Z"
+}

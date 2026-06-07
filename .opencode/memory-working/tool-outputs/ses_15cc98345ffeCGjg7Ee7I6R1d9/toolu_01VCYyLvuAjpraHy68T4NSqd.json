@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01VCYyLvuAjpraHy68T4NSqd",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/components/BaseLayout.astro</path>\n<type>file</type>\n<content>\n1: ---\n2: import Footer from \"./Footer.astro\";\n3: import \"../styles/global.css\";\n4: \n5: export interface Props {\n6:   title: string;\n7:   description?: string;\n8: }\n9: \n10: const { title, description = \"Ferienwohnung Hamburg-Wellingsbüttel\" } = Astro.props;\n11: ---\n12: \n13: <!doctype html>\n14: <html lang=\"de\">\n15:   <head>\n16:     <meta charset=\"UTF-8\" />\n17:     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n18:     <title>{title}</title>\n19:     {description && <meta name=\"description\" content={description} />}\n20:     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n\n(Showing lines 1-20 of 118. Use offset=21 to continue.)\n</content>",
+  "timestamp": 1780855558821
+}

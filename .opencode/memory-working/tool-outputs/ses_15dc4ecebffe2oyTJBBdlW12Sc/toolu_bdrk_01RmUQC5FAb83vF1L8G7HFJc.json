@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01RmUQC5FAb83vF1L8G7HFJc",
+  "sessionID": "ses_15dc4ecebffe2oyTJBBdlW12Sc",
+  "tool": "todowrite",
+  "fullOutput": "[\n  {\n    \"content\": \"Echte Airbnb-Daten in index.html einpflegen\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\"\n  }\n]",
+  "timestamp": 1780838532590
+}

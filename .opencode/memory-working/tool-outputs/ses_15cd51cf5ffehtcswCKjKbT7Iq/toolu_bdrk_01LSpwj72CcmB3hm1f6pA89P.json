@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01LSpwj72CcmB3hm1f6pA89P",
+  "sessionID": "ses_15cd51cf5ffehtcswCKjKbT7Iq",
+  "tool": "todowrite",
+  "fullOutput": "[\n  {\n    \"content\": \"Moderneres Design: neue Schrift + E-Mail-Adresse aktualisieren\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Google Fonts auf modernere Kombination umstellen (Inter/Plus Jakarta Sans + Playfair Display)\",\n    \"status\": \"pending\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"CSS: Neues Design-System mit frischerer Farbpalette\",\n    \"status\": \"pending\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"E-Mail aktualisieren: ferienwohnung@preissel-hh.de\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  }\n]",
+  "timestamp": 1780854002700
+}

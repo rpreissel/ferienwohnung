@@ -1,0 +1,63 @@
+{
+  "sessionID": "ses_15de68a0fffeMdQFjvxjl9sOsp",
+  "slots": {
+    "error": [],
+    "decision": [],
+    "todo": [],
+    "dependency": []
+  },
+  "pool": [
+    {
+      "id": "wm_1780836043368_z7xxdi2",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/.opencode/memory-working/tool-outputs/ses_15de68a0fffeMdQFjvxjl9sOsp/call_SQtgDHVdtnl0vKVUyd8tQxXB.js",
+      "source": "tool:glob",
+      "timestamp": 1780836043368,
+      "relevanceScore": 2.11531875,
+      "mentions": 1,
+      "lastEventCounter": 5
+    },
+    {
+      "id": "wm_1780836043369_enijq4n",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/.opencode/memory-working/ses_15de68a0fffeMdQFjvxjl9sOsp_pressure.js",
+      "source": "tool:glob",
+      "timestamp": 1780836043368,
+      "relevanceScore": 1.900375,
+      "mentions": 1,
+      "lastEventCounter": 5
+    },
+    {
+      "id": "wm_1780836043369_qpua09h",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/.opencode/node_modules/.package-lock.js",
+      "source": "tool:glob",
+      "timestamp": 1780836043368,
+      "relevanceScore": 1.6475,
+      "mentions": 1,
+      "lastEventCounter": 5
+    },
+    {
+      "id": "wm_1780836043369_5saqiip",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/.opencode/package-lock.js",
+      "source": "tool:glob",
+      "timestamp": 1780836043368,
+      "relevanceScore": 1.35,
+      "mentions": 1,
+      "lastEventCounter": 5
+    },
+    {
+      "id": "wm_1780836043369_pijyveq",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/.opencode/package.js",
+      "source": "tool:glob",
+      "timestamp": 1780836043368,
+      "relevanceScore": 1,
+      "mentions": 1,
+      "lastEventCounter": 5
+    }
+  ],
+  "eventCounter": 5,
+  "updatedAt": "2026-06-07T12:40:43.369Z"
+}

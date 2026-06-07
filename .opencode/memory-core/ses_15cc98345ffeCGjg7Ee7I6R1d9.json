@@ -1,0 +1,21 @@
+{
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "blocks": {
+    "goal": {
+      "value": "Migrate ferienwohnung static HTML site to Astro with: local images, Markdown content, GitHub Actions deployment to GitHub Pages",
+      "charLimit": 1000,
+      "lastModified": "2026-06-07T17:55:28.289Z"
+    },
+    "progress": {
+      "value": "",
+      "charLimit": 2000,
+      "lastModified": "2026-06-07T17:55:28.289Z"
+    },
+    "context": {
+      "value": "",
+      "charLimit": 1500,
+      "lastModified": "2026-06-07T17:55:28.289Z"
+    }
+  },
+  "updatedAt": "2026-06-07T17:55:28.289Z"
+}

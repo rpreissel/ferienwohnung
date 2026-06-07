@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "ferienwohnung",
+    "createdAt": 1780834247669,
+    "preset": "starter"
+  },
+  "authorizedRoots": [
+    "/Users/rene/Develop/opencode/ferienwohnung"
+  ],
+  "reload": null
+}

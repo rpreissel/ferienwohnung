@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01Mncg98nmrgJC17deR7ikjN",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "bash",
+  "fullOutput": "total 352\n-rw-r--r--@ 1 rene  staff    22K Jun  7 20:05 bricolage-grotesque-v9-latin-600.woff2\n-rw-r--r--@ 1 rene  staff    22K Jun  7 20:05 bricolage-grotesque-v9-latin-700.woff2\n-rw-r--r--@ 1 rene  staff    21K Jun  7 20:05 bricolage-grotesque-v9-latin-800.woff2\n-rw-r--r--@ 1 rene  staff    22K Jun  7 20:05 bricolage-grotesque-v9-latin-regular.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-300.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-500.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-600.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-700.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-italic.woff2\n-rw-r--r--@ 1 rene  staff    12K Jun  7 20:05 plus-jakarta-sans-v12-latin-regular.woff2\n",
+  "timestamp": 1780855540441
+}

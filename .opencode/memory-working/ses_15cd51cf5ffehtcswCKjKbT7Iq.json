@@ -1,0 +1,23 @@
+{
+  "sessionID": "ses_15cd51cf5ffehtcswCKjKbT7Iq",
+  "slots": {
+    "error": [],
+    "decision": [],
+    "todo": [],
+    "dependency": []
+  },
+  "pool": [
+    {
+      "id": "wm_1780853997248_dvrj4sg",
+      "type": "file-path",
+      "content": "//fonts.go",
+      "source": "tool:read",
+      "timestamp": 1780853997248,
+      "relevanceScore": 1,
+      "mentions": 1,
+      "lastEventCounter": 1
+    }
+  ],
+  "eventCounter": 1,
+  "updatedAt": "2026-06-07T17:39:57.248Z"
+}

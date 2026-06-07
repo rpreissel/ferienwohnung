@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01WyMefufG7NsxBw6gVBi7tv",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "bash",
+  "fullOutput": "\n> ferienwohnung@1.0.0 dev\n> astro dev\n\n20:08:11 [types] Generated 0ms\n20:08:11 [content] Syncing content\n20:08:11 [content] Synced content\n\n astro  v5.18.2 ready in 203 ms\n\n┃ Local    http://localhost:4321/\n┃ Network  use --host to expose\n\n20:08:11 watching for file changes...\n",
+  "timestamp": 1780855697877
+}

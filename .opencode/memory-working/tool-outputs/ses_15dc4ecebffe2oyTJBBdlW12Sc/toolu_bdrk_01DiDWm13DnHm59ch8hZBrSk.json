@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01DiDWm13DnHm59ch8hZBrSk",
+  "sessionID": "ses_15dc4ecebffe2oyTJBBdlW12Sc",
+  "tool": "todowrite",
+  "fullOutput": "[\n  {\n    \"content\": \"Hero mit echtem Foto-Hintergrund (Unsplash) aufwerten\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Highlight-Karten mit Icons versehen\",\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Ausstattung als Icon-Grid gestalten\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Lage-Sektion mit besserem Split-Layout\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  },\n  {\n    \"content\": \"Kontakt-Sektion als auffälliges CTA-Banner\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  },\n  {\n    \"content\": \"Typografie & Abstände verbessern\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  }\n]",
+  "timestamp": 1780838373752
+}

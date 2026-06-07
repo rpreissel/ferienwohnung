@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01HZArVcEUBh3N2t7GEXEWxH",
+  "sessionID": "ses_15cd51cf5ffehtcswCKjKbT7Iq",
+  "tool": "todowrite",
+  "fullOutput": "[\n  {\n    \"content\": \"Alle Mobile-Probleme in styles.css beheben\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"CTA-Button clippt aus Topbar (right=403 bei vw=390)\",\n    \"status\": \"pending\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"Touch-Targets zu klein: brand h=28px, cta h=39px (min 44px nötig)\",\n    \"status\": \"pending\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"hero-content übersteht seitlich (right=374, main padding zu gering)\",\n    \"status\": \"pending\",\n    \"priority\": \"high\"\n  },\n  {\n    \"content\": \"contact-banner seitliches Padding auf Mobile reduzieren\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  },\n  {\n    \"content\": \"hero-actions auf Mobile: Buttons vertikal stapeln (sicherer)\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  },\n  {\n    \"content\": \"Ergebnis auf mehreren Viewport-Breiten prüfen (360, 390, 414, 768px)\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\"\n  }\n]",
+  "timestamp": 1780854282042
+}

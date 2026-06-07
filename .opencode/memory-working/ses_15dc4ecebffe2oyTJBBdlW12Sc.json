@@ -1,0 +1,53 @@
+{
+  "sessionID": "ses_15dc4ecebffe2oyTJBBdlW12Sc",
+  "slots": {
+    "error": [
+      {
+        "id": "wm_1780838990363_k1sewvv",
+        "type": "error",
+        "content": "error: failed to push some refs to 'github.com:rpreissel/ferienwohnung.git'",
+        "source": "tool:bash",
+        "timestamp": 1780838990363,
+        "relevanceScore": 0,
+        "mentions": 1
+      }
+    ],
+    "decision": [],
+    "todo": [],
+    "dependency": []
+  },
+  "pool": [
+    {
+      "id": "wm_1780838249332_hzljat3",
+      "type": "file-path",
+      "content": "//fonts.go",
+      "source": "tool:read",
+      "timestamp": 1780838802571,
+      "relevanceScore": 2.1475,
+      "mentions": 2,
+      "lastEventCounter": 4
+    },
+    {
+      "id": "wm_1780838246867_5hpktzk",
+      "type": "file-path",
+      "content": "README.md",
+      "source": "tool:read",
+      "timestamp": 1780838246867,
+      "relevanceScore": 1.900375,
+      "mentions": 1,
+      "lastEventCounter": 4
+    },
+    {
+      "id": "wm_1780838249729_4d2zvf5",
+      "type": "file-path",
+      "content": "/Users/rene/Develop/opencode/ferienwohnung/README.md",
+      "source": "tool:read",
+      "timestamp": 1780838249727,
+      "relevanceScore": 1.35,
+      "mentions": 1,
+      "lastEventCounter": 4
+    }
+  ],
+  "eventCounter": 5,
+  "updatedAt": "2026-06-07T13:29:50.363Z"
+}

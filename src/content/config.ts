@@ -10,6 +10,10 @@ const apartmentCollection = defineCollection({
     seoDescription: z.string(),
     email: z.string(),
     registrationNumber: z.string(),
+    pricing: z.object({
+      perNight: z.number(),
+      cleaning: z.number(),
+    }),
     stats: z.array(z.object({ value: z.string(), label: z.string() })),
     highlights: z.array(
       z.object({ title: z.string(), text: z.string(), icon: z.string() })

@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_012FAa67EYVp4LgLiNDnrP2s",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/content/config.ts</path>\n<type>file</type>\n<content>\n1: import { defineCollection, z } from \"astro:content\";\n2: \n3: const apartmentCollection = defineCollection({\n4:   type: \"data\",\n5:   schema: z.object({\n6:     title: z.string(),\n7:     eyebrow: z.string(),\n8:     subtitle: z.string(),\n9:     seoTitle: z.string(),\n10:     seoDescription: z.string(),\n11:     email: z.string(),\n12:     registrationNumber: z.string(),\n13:     stats: z.array(z.object({ value: z.string(), label: z.string() })),\n14:     highlights: z.array(\n15:       z.object({ title: z.string(), text: z.string(), icon: z.string() })\n16:     ),\n17:     description: z.object({\n18:       heading: z.string(),\n19:       paragraphs: z.array(z.string()),\n20:       note: z.string(),\n21:     }),\n22:     amenities: z.array(\n23:       z.object({ title: z.string(), text: z.string(), icon: z.string() })\n24:     ),\n25:     location: z.object({\n26:       heading: z.string(),\n27:       text: z.string(),\n28:       checklist: z.array(z.string()),\n29:     }),\n30:     contact: z.object({\n31:       heading: z.string(),\n32:       text: z.string(),\n33:     }),\n34:   }),\n35: });\n36: \n37: export const collections = {\n38:   apartment: apartmentCollection,\n39: };\n\n(End of file - total 39 lines)\n</content>",
+  "timestamp": 1780858675762
+}

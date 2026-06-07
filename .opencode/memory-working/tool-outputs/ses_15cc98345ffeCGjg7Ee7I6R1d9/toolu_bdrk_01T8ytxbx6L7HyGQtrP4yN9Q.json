@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01T8ytxbx6L7HyGQtrP4yN9Q",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/content/apartment/apartment.yaml</path>\n<type>file</type>\n<content>\n1: title: \"Im Grünen und schnell in der Stadt.\"\n2: eyebrow: \"Apartment · Hamburg-Wellingsbüttel\"\n3: subtitle: \"Neu eingerichtetes, lichtdurchflutetes Apartment im 2. OG in einer ruhigen, grünen Wohngegend nahe dem Alsterlauf.\"\n4: seoTitle: \"Im Grünen und schnell in der Stadt | Ferienwohnung Hamburg-Wellingsbüttel\"\n5: seoDescription: \"Modernes, lichtdurchflutetes Apartment in Hamburg-Wellingsbüttel. 2 Gäste, 1 Schlafzimmer, WLAN, Küche. 5 Gehminuten zur S-Bahn. Gäste-Favorit mit 4,98 von 5 Sternen.\"\n6: email: \"ferienwohnung@preissel-hh.de\"\n7: registrationNumber: \"52-0032149-23\"\n8: \n9: stats:\n10:   - value: \"2\"\n11:     label: \"Gäste\"\n12:   - value: \"1\"\n13:     label: \"Schlafzimmer\"\n14:   - value: \"1\"\n15:     label: \"Bett\"\n16:   - value: \"1\"\n17:     label: \"Badezimmer\"\n18: \n19: highlights:\n20:   - title: \"Neu eingerichtet\"\n\n(Showing lines 1-20 of 79. Use offset=21 to continue.)\n</content>",
+  "timestamp": 1780858665995
+}

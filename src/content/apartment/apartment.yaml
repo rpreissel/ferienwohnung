@@ -6,6 +6,10 @@ seoDescription: "Modernes, lichtdurchflutetes Apartment in Hamburg-Wellingsbütt
 email: "ferienwohnung@preissel-hh.de"
 registrationNumber: "52-0032149-23"
 
+pricing:
+  perNight: 95
+  cleaning: 30
+
 stats:
   - value: "2"
     label: "Gäste"

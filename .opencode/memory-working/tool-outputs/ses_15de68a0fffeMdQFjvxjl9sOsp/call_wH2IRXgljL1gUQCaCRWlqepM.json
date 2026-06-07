@@ -1,0 +1,7 @@
+{
+  "callID": "call_wH2IRXgljL1gUQCaCRWlqepM",
+  "sessionID": "ses_15de68a0fffeMdQFjvxjl9sOsp",
+  "tool": "bash",
+  "fullOutput": "github.com\n  ✓ Logged in to github.com account rpreissel (keyring)\n  - Active account: true\n  - Git operations protocol: ssh\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo'\n",
+  "timestamp": 1780836269940
+}

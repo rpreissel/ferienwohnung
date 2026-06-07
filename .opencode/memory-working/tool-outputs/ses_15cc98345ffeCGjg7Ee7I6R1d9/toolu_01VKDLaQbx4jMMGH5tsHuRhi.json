@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01VKDLaQbx4jMMGH5tsHuRhi",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/styles/global.css</path>\n<type>file</type>\n<content>\n1: /* ─── TOKENS ─── */\n2: :root {\n3:   --bg:           #f4f6f5;\n4:   --surface:      #ffffff;\n5:   --text:         #111827;\n6:   --muted:        #4b5563;\n7:   --subtle:       #9ca3af;\n8:   --brand:        #1a7a5e;\n9:   --brand-dark:   #135e48;\n10:   --brand-light:  #e6f4f0;\n\n(Showing lines 1-10 of 715. Use offset=11 to continue.)\n</content>",
+  "timestamp": 1780855456891
+}

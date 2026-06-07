@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_014TThwQpkMTJQatSnQreGep",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "bash",
+  "fullOutput": "\nadded 277 packages, and audited 278 packages in 39s\n\n150 packages are looking for funding\n  run `npm fund` for details\n\n1 moderate severity vulnerability\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+  "timestamp": 1780855184170
+}

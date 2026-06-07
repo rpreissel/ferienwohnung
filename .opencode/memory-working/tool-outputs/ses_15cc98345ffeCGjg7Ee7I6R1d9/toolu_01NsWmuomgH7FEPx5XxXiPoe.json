@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_01NsWmuomgH7FEPx5XxXiPoe",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/pages/index.astro</path>\n<type>file</type>\n<content>\n1: ---\n2: import { getEntry } from \"astro:content\";\n3: import Header from \"../components/Header.astro\";\n4: import Hero from \"../components/Hero.astro\";\n5: import Highlights from \"../components/Highlights.astro\";\n6: import Description from \"../components/Description.astro\";\n7: import Gallery from \"../components/Gallery.astro\";\n8: import Amenities from \"../components/Amenities.astro\";\n9: import Location from \"../components/Location.astro\";\n10: import Contact from \"../components/Contact.astro\";\n\n(Showing lines 1-10 of 71. Use offset=11 to continue.)\n</content>",
+  "timestamp": 1780855130453
+}

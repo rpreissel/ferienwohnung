@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_017tuhFGwZYSrNh3zi3gowkS",
+  "sessionID": "ses_15dc4ecebffe2oyTJBBdlW12Sc",
+  "tool": "bash",
+  "fullOutput": "To github.com:rpreissel/ferienwohnung.git\n ! [rejected]        main -> main (fetch first)\nerror: failed to push some refs to 'github.com:rpreissel/ferienwohnung.git'\nhint: Updates were rejected because the remote contains work that you do not\nhint: have locally. This is usually caused by another repository pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\n",
+  "timestamp": 1780838990363
+}
