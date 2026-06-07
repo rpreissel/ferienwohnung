@@ -4,6 +4,9 @@ import livingRoom from "../assets/images/living-room.jpg";
 import bedroom from "../assets/images/bedroom.jpg";
 import kitchen from "../assets/images/kitchen.jpg";
 import dishwasher from "../assets/images/dishwasher.jpg";
+import desk from "../assets/images/desk.jpg";
+import bathroom from "../assets/images/bathroom.jpg";
+import bathroom2 from "../assets/images/bathroom2.jpg";
 ---
 
 <section class="gallery">
@@ -22,6 +25,13 @@ import dishwasher from "../assets/images/dishwasher.jpg";
     sizes="(max-width: 600px) 50vw, 25vw"
   />
   <Image
+    src={desk}
+    alt="Arbeitsplatz"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
     src={kitchen}
     alt="Küche und Essplatz"
     loading="lazy"
@@ -30,7 +40,21 @@ import dishwasher from "../assets/images/dishwasher.jpg";
   />
   <Image
     src={dishwasher}
-    alt="Spülmaschine und Kühlschrank"
+    alt="Spülmaschine und Kühlschrank mit Gefrierfach"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={bathroom}
+    alt="Badezimmer"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={bathroom2}
+    alt="Bad mit Dusche"
     loading="lazy"
     widths={[400, 720]}
     sizes="(max-width: 600px) 50vw, 25vw"

@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01C7PEUCyUWpqpYspPdYGoRB",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/components/Gallery.astro</path>\n<type>file</type>\n<content>\n1: ---\n2: import { Image } from \"astro:assets\";\n3: import livingRoom from \"../assets/images/living-room.jpg\";\n4: import bedroom from \"../assets/images/bedroom.jpg\";\n5: import kitchen from \"../assets/images/kitchen.jpg\";\n6: import dishwasher from \"../assets/images/dishwasher.jpg\";\n7: ---\n8: \n9: <section class=\"gallery\">\n10:   <Image\n11:     src={livingRoom}\n12:     alt=\"Wohn-/Schlafzimmer\"\n13:     loading=\"lazy\"\n14:     widths={[400, 720]}\n15:     sizes=\"(max-width: 600px) 50vw, 25vw\"\n16:   />\n17:   <Image\n18:     src={bedroom}\n19:     alt=\"Schlafbereich\"\n20:     loading=\"lazy\"\n21:     widths={[400, 720]}\n22:     sizes=\"(max-width: 600px) 50vw, 25vw\"\n23:   />\n24:   <Image\n25:     src={kitchen}\n26:     alt=\"Küche und Essplatz\"\n27:     loading=\"lazy\"\n28:     widths={[400, 720]}\n29:     sizes=\"(max-width: 600px) 50vw, 25vw\"\n30:   />\n31:   <Image\n32:     src={dishwasher}\n33:     alt=\"Spülmaschine und Kühlschrank\"\n34:     loading=\"lazy\"\n35:     widths={[400, 720]}\n36:     sizes=\"(max-width: 600px) 50vw, 25vw\"\n37:   />\n38: </section>\n\n(End of file - total 38 lines)\n</content>",
+  "timestamp": 1780861113946
+}

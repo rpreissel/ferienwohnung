@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01HuFGRq8Pm8kkw3ZZGkb1fo",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/styles/global.css</path>\n<type>file</type>\n<content>\n492: \n493: .lage-image {\n494:   height: 100%;\n495:   min-height: 320px;\n496: }\n497: \n498: .lage-image img {\n499:   height: 100%;\n500:   object-position: center center;\n501: }\n502: \n503: /* ─── GALLERY ─── */\n504: .gallery {\n505:   display: grid;\n506:   grid-template-columns: repeat(4, 1fr);\n507:   gap: 0.75rem;\n508:   border-radius: var(--radius-lg);\n509:   overflow: hidden;\n510: }\n511: \n512: .gallery img {\n513:   height: 210px;\n514:   border-radius: var(--radius-md);\n515:   transition: transform 300ms ease, box-shadow 300ms;\n516:   cursor: pointer;\n517: }\n518: \n519: .gallery img:hover {\n520:   transform: scale(1.025);\n521:   box-shadow: var(--shadow-md);\n\n(Showing lines 492-521 of 798. Use offset=522 to continue.)\n</content>",
+  "timestamp": 1780861130309
+}
