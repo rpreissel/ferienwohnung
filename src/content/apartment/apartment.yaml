@@ -45,7 +45,7 @@ description:
 
 amenities:
   - title: "Küche"
-    text: "Induktionsherd, Kühlschrank, Spülmaschine, Kaffeemaschine"
+    text: "Induktionsherd (portabel), Kühlschrank, Spülmaschine, Kaffeemaschine"
     icon: "kitchen"
   - title: "Schlafen"
     text: "Queensize-Schlafsofa, Bettwäsche inklusive"
@@ -71,7 +71,7 @@ amenities:
 
 location:
   heading: "Wellingsbüttel – grün und gut angebunden"
-  text: "Ruhiger, grüner Stadtteil mit Alsterlauf, Naturschutzgebiet und Kleingartenanlagen. Bäcker, Supermarkt, Apotheken und Restaurants sind fußläufig erreichbar."
+  text: "Ruhiger, grüner Stadtteil mit Alsterlauf, Naturschutzgebiet und Kleingartenanlagen. Bäcker, Supermarkt, Apotheken und Restaurants sind in 15 Minuten zu Fuß oder einer S-Bahn-Station erreichbar."
   checklist:
     - "5 Min zu Fuß zur S-Bahn Hoheneichen"
     - "25 Min bis Hamburg Hauptbahnhof (S-Bahn)"

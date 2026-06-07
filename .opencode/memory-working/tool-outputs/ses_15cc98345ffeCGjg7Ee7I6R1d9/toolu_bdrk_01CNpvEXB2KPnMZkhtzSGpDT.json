@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01CNpvEXB2KPnMZkhtzSGpDT",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/content/apartment/apartment.yaml</path>\n<type>file</type>\n<content>\n44:   note: \"Nichtraucherwohnung · Kein Balkon · Mindestaufenthalt 2 Nächte\"\n45: \n46: amenities:\n47:   - title: \"Küche\"\n48:     text: \"Induktionsherd, Kühlschrank, Spülmaschine, Kaffeemaschine\"\n49:     icon: \"kitchen\"\n50:   - title: \"Schlafen\"\n51:     text: \"Queensize-Schlafsofa, Bettwäsche inklusive\"\n52:     icon: \"bed\"\n53:   - title: \"Badezimmer\"\n54:     text: \"Dusche, Föhn, Handtücher inklusive\"\n55:     icon: \"bath\"\n56:   - title: \"Unterhaltung\"\n57:     text: \"37-Zoll-Fernseher, kostenloses WLAN\"\n58:     icon: \"tv\"\n59:   - title: \"Waschen\"\n60:     text: \"Waschmaschine & Trockner in der Unterkunft\"\n61:     icon: \"washer\"\n62:   - title: \"Parken\"\n63:     text: \"Kostenlose Parkplätze auf der Straße\"\n64:     icon: \"car\"\n65:   - title: \"Arbeitsplatz\"\n66:     text: \"Schreibtisch mit Flatscreen, schnelles WLAN\"\n67:     icon: \"desk\"\n68:   - title: \"Extras\"\n69:     text: \"Babybett & Hochstuhl auf Anfrage verfügbar\"\n70:     icon: \"heart\"\n71: \n72: location:\n73:   heading: \"Wellingsbüttel – grün und gut angebunden\"\n\n(Showing lines 44-73 of 84. Use offset=74 to continue.)\n</content>",
+  "timestamp": 1780859094731
+}

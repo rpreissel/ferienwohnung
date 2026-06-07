@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01Fcmkkf2WAfTiU5vuYwLAqb",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/content/apartment/apartment.yaml</path>\n<type>file</type>\n<content>\n72: location:\n73:   heading: \"Wellingsbüttel – grün und gut angebunden\"\n74:   text: \"Ruhiger, grüner Stadtteil mit Alsterlauf, Naturschutzgebiet und Kleingartenanlagen. Bäcker, Supermarkt, Apotheken und Restaurants sind fußläufig erreichbar.\"\n75:   checklist:\n76:     - \"5 Min zu Fuß zur S-Bahn Hoheneichen\"\n77:     - \"25 Min bis Hamburg Hauptbahnhof (S-Bahn)\"\n78:     - \"3 S-Bahn-Stationen bis Flughafen Hamburg\"\n79:     - \"20 Min zum Stadtpark mit Freilichtbühne\"\n80:     - \"~1 Std. mit dem Rad entlang der Alster in die City\"\n81: \n82: contact:\n83:   heading: \"Interesse? Schreiben Sie uns.\"\n84:   text: \"Senden Sie Ihren Wunschzeitraum – wir antworten in der Regel innerhalb von 24 Stunden. Mindestaufenthalt: 2 Nächte.\"\n\n(End of file - total 84 lines)\n</content>",
+  "timestamp": 1780859099355
+}
