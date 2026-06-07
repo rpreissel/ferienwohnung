@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_014XeVDe4nKKZC5BTPymTx2q",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/components/Hero.astro</path>\n<type>file</type>\n<content>\n1: ---\n2: import { Image } from \"astro:assets\";\n3: import livingRoom from \"../assets/images/living-room.jpg\";\n4: \n5: export interface Stat {\n\n(Showing lines 1-5 of 135. Use offset=6 to continue.)\n</content>",
+  "timestamp": 1780862044212
+}

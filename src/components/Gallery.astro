@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import livingRoom from "../assets/images/living-room.jpg";
-import bedroom from "../assets/images/bedroom.jpg";
+import sofa from "../assets/images/sofa.jpg";
 import inductionHob from "../assets/images/induction-hob.jpg";
+import coffeeMachine from "../assets/images/coffee-machine.jpg";
 import dishwasher from "../assets/images/dishwasher.jpg";
 import bathroom2 from "../assets/images/bathroom2.jpg";
 ---
@@ -16,15 +17,22 @@ import bathroom2 from "../assets/images/bathroom2.jpg";
     sizes="(max-width: 600px) 50vw, 25vw"
   />
   <Image
-    src={bedroom}
-    alt="Schlafbereich"
+    src={sofa}
+    alt="Schlafsofa"
     loading="lazy"
     widths={[400, 720]}
     sizes="(max-width: 600px) 50vw, 25vw"
   />
   <Image
     src={inductionHob}
-    alt="Küche mit Induktionsherd"
+    alt="Induktionsherd und Spüle"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={coffeeMachine}
+    alt="Kaffeemaschine"
     loading="lazy"
     widths={[400, 720]}
     sizes="(max-width: 600px) 50vw, 25vw"
