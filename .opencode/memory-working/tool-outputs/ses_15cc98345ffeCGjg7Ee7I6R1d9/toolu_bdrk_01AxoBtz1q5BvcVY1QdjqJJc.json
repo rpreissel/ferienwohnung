@@ -1,0 +1,7 @@
+{
+  "callID": "toolu_bdrk_01AxoBtz1q5BvcVY1QdjqJJc",
+  "sessionID": "ses_15cc98345ffeCGjg7Ee7I6R1d9",
+  "tool": "read",
+  "fullOutput": "<path>/Users/rene/Develop/opencode/ferienwohnung/src/content/apartment/apartment.yaml</path>\n<type>file</type>\n<content>\n1: title: \"Im Grünen und schnell in der Stadt.\"\n2: eyebrow: \"Apartment · Hamburg-Wellingsbüttel\"\n3: subtitle: \"Neu eingerichtetes, lichtdurchflutetes Apartment im 2. OG in einer ruhigen, grünen Wohngegend nahe dem Alsterlauf.\"\n4: seoTitle: \"Im Grünen und schnell in der Stadt | Ferienwohnung Hamburg-Wellingsbüttel\"\n5: seoDescription: \"Modernes, lichtdurchflutetes Apartment in Hamburg-Wellingsbüttel. 2 Gäste, 1 Schlafzimmer, WLAN, Küche. 5 Gehminuten zur S-Bahn. Gäste-Favorit mit 4,98 von 5 Sternen.\"\n6: email: \"ferienwohnung@preissel-hh.de\"\n7: registrationNumber: \"52-0032149-23\"\n8: \n9: pricing:\n10:   perNight: 95\n11:   cleaning: 30\n12: \n13: stats:\n14:   - value: \"2\"\n15:     label: \"Gäste\"\n\n(Showing lines 1-15 of 83. Use offset=16 to continue.)\n</content>",
+  "timestamp": 1780858771972
+}

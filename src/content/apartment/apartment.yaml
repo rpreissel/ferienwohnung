@@ -9,6 +9,7 @@ registrationNumber: "52-0032149-23"
 pricing:
   perNight: 95
   cleaning: 30
+  cancellation: "Kostenlose Stornierung bis 5 Tage vor Anreise. Bei späterer Stornierung wird der volle Betrag berechnet."
 
 stats:
   - value: "2"

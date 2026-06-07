@@ -13,6 +13,7 @@ const apartmentCollection = defineCollection({
     pricing: z.object({
       perNight: z.number(),
       cleaning: z.number(),
+      cancellation: z.string(),
     }),
     stats: z.array(z.object({ value: z.string(), label: z.string() })),
     highlights: z.array(
