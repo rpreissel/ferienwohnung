@@ -12,13 +12,13 @@
     "usable": 968000
   },
   "current": {
-    "totalTokens": 164375,
-    "pressure": 0.16980888429752067,
+    "totalTokens": 170380,
+    "pressure": 0.17601239669421487,
     "level": "safe"
   },
   "thresholds": {
     "moderate": 726000,
     "high": 871200
   },
-  "updatedAt": "2026-06-07T20:01:45.069Z"
+  "updatedAt": "2026-06-07T20:03:44.809Z"
 }

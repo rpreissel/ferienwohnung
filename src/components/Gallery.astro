@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import livingRoom from "../assets/images/living-room.jpg";
 import sofa from "../assets/images/sofa.jpg";
 import inductionHob from "../assets/images/induction-hob.jpg";
+import coffeeMachine from "../assets/images/coffee-machine.jpg";
 import kitchenDining from "../assets/images/kitchen-dining.jpg";
 import washerDryer from "../assets/images/washer-dryer.jpg";
 import bathroom2 from "../assets/images/bathroom2.jpg";
@@ -26,6 +27,13 @@ import bathroom2 from "../assets/images/bathroom2.jpg";
   <Image
     src={inductionHob}
     alt="Spüle und Induktionsherd"
+    loading="lazy"
+    widths={[400, 720]}
+    sizes="(max-width: 600px) 50vw, 25vw"
+  />
+  <Image
+    src={coffeeMachine}
+    alt="Philips Senseo Kaffeepadmaschine"
     loading="lazy"
     widths={[400, 720]}
     sizes="(max-width: 600px) 50vw, 25vw"
