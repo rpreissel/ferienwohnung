@@ -45,7 +45,7 @@ description:
 
 amenities:
   - title: "Küche"
-    text: "Induktionsherd (portabel), Kühlschrank, Spülmaschine, Kaffeemaschine"
+    text: "Kühlschrank, Spülmaschine, Kaffeemaschine, Induktionsherd (portabel)"
     icon: "kitchen"
   - title: "Schlafen"
     text: "Queensize-Schlafsofa, Bettwäsche inklusive"
