@@ -15,7 +15,7 @@ stats:
   - value: "2"
     label: "Gäste"
   - value: "1"
-    label: "Wohn-/Schlafzimmer"
+    label: "Schlafzimmer"
   - value: "1"
     label: "Bett"
   - value: "1"

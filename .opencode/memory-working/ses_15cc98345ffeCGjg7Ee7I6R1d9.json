@@ -36,18 +36,8 @@
       "relevanceScore": 1.35,
       "mentions": 1,
       "lastEventCounter": 6
-    },
-    {
-      "id": "wm_1780858675762_7kjvzwv",
-      "type": "file-path",
-      "content": "/Users/rene/Develop/opencode/ferienwohnung/src/content/config.ts",
-      "source": "tool:read",
-      "timestamp": 1780858675762,
-      "relevanceScore": 1,
-      "mentions": 1,
-      "lastEventCounter": 6
     }
   ],
   "eventCounter": 7,
-  "updatedAt": "2026-06-07T19:36:13.222Z"
+  "updatedAt": "2026-06-08T03:00:18.043Z"
 }
