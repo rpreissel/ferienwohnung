@@ -21,14 +21,14 @@ const { heading, paragraphs, note } = Astro.props;
     {paragraphs.map((p) => <p>{p}</p>)}
     <p class="desc-note">{note}</p>
   </div>
-  <div class="desc-images" data-lightbox-group="description">
+  <div class="desc-images">
     <Image
       src={exterior}
       alt="Außenansicht des Hauses"
       loading="lazy"
       widths={[400, 720, 1200]}
       sizes="(max-width: 600px) 100vw, 50vw"
-      data-lightbox
+      data-lightbox-ref="exterior.jpg"
     />
     <Image
       src={kitchenDining}
@@ -36,23 +36,23 @@ const { heading, paragraphs, note } = Astro.props;
       loading="lazy"
       widths={[400, 720, 1200]}
       sizes="(max-width: 600px) 100vw, 50vw"
-      data-lightbox
+      data-lightbox-ref="kitchen-dining.jpg"
     />
     <Image
       src={bathroom}
-      alt="Bad mit Dusche"
+      alt="Badezimmer mit Dusche"
       loading="lazy"
       widths={[400, 720, 1200]}
       sizes="(max-width: 600px) 100vw, 50vw"
-      data-lightbox
+      data-lightbox-ref="bathroom.jpg"
     />
     <Image
       src={desk}
-      alt="Arbeitsplatz und Schlafbereich"
+      alt="Wohn-/Schlafzimmer: Arbeitsplatz"
       loading="lazy"
       widths={[400, 720, 1200]}
       sizes="(max-width: 600px) 100vw, 50vw"
-      data-lightbox
+      data-lightbox-ref="desk.jpg"
     />
   </div>
 </section>

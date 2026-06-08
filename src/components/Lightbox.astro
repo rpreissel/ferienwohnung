@@ -20,21 +20,26 @@
     const btnPrev = document.getElementById("lightbox-prev") as HTMLButtonElement;
     const btnNext = document.getElementById("lightbox-next") as HTMLButtonElement;
 
+    // Alle Galerie-Bilder (einzige Navigationsquelle)
     let images: HTMLImageElement[] = [];
     let current = 0;
 
-    function collectImages() {
-      images = Array.from(document.querySelectorAll<HTMLImageElement>("img[data-lightbox]"));
+    /** Dateiname aus src/srcset extrahieren (ohne Query/Hash) */
+    function basename(src: string): string {
+      return src.split("?")[0].split("/").pop() ?? src;
     }
 
-    function show(index: number) {
-      current = (index + images.length) % images.length;
-      const el = images[current];
+    /** Prüft ob ein generierter Astro-Dateiname (z.B. "exterior.B660mkyN_Z14hJ5v.webp")
+     *  zum Originalbildnamen (z.B. "exterior.jpg") passt */
+    function matchesRef(generatedName: string, ref: string): boolean {
+      // ref = "exterior.jpg" → stem = "exterior"
+      const stem = ref.replace(/\.[^.]+$/, "");
+      // generierter Name beginnt mit dem Stem gefolgt von "."
+      return generatedName.startsWith(stem + ".");
+    }
 
-      // Nutze das src-Attribut des Elements — für srcset nimm das größte verfügbare
-      let src = el.currentSrc || el.src;
-
-      // Versuche aus srcset die größte Variante zu lesen
+    /** Größtes Bild aus srcset lesen */
+    function bestSrc(el: HTMLImageElement): string {
       if (el.srcset) {
         const entries = el.srcset
           .split(",")
@@ -43,22 +48,22 @@
           .map(([url, w]) => ({ url, width: parseInt(w) }));
         if (entries.length) {
           entries.sort((a, b) => b.width - a.width);
-          src = entries[0].url;
+          return entries[0].url;
         }
       }
+      return el.currentSrc || el.src;
+    }
 
-      img.src = src;
+    function show(index: number) {
+      current = (index + images.length) % images.length;
+      const el = images[current];
+
+      img.src = bestSrc(el);
       img.alt = el.alt;
       caption.textContent = el.alt;
 
-      // Pfeile nur anzeigen, wenn mehrere Bilder in derselben Gruppe vorhanden
-      const group = el.closest("[data-lightbox-group]");
-      const groupImgs = group
-        ? images.filter((i) => i.closest("[data-lightbox-group]") === group)
-        : images;
-      const showNav = groupImgs.length > 1;
-      btnPrev.hidden = !showNav;
-      btnNext.hidden = !showNav;
+      btnPrev.hidden = images.length <= 1;
+      btnNext.hidden = images.length <= 1;
 
       lightbox.hidden = false;
       document.body.style.overflow = "hidden";
@@ -72,23 +77,36 @@
     }
 
     function navigate(dir: 1 | -1) {
-      // Navigation nur innerhalb derselben Gruppe
-      const el = images[current];
-      const group = el.closest("[data-lightbox-group]");
-      const groupImgs = group
-        ? images.filter((i) => i.closest("[data-lightbox-group]") === group)
-        : images;
-      const idx = groupImgs.indexOf(el);
-      const newEl = groupImgs[(idx + dir + groupImgs.length) % groupImgs.length];
-      show(images.indexOf(newEl));
+      show((current + dir + images.length) % images.length);
     }
 
-    // Klick-Handler auf alle lightbox-Bilder
     function bindClicks() {
-      collectImages();
+      // Galerie-Bilder: Navigationsquelle
+      images = Array.from(
+        document.querySelectorAll<HTMLImageElement>(".gallery img[data-lightbox]")
+      );
+
       images.forEach((el, i) => {
         el.style.cursor = "zoom-in";
         el.addEventListener("click", () => show(i));
+      });
+
+      // Description-Bilder: beim Klick passendes Galerie-Bild öffnen (per Dateiname)
+      const aliasImgs = document.querySelectorAll<HTMLImageElement>(
+        ".desc-images img[data-lightbox-ref]"
+      );
+
+      aliasImgs.forEach((el) => {
+        el.style.cursor = "zoom-in";
+        el.addEventListener("click", () => {
+          const ref = el.dataset.lightboxRef ?? "";
+          // Suche das Gallery-Bild mit dem gleichen Dateinamen
+          const idx = images.findIndex((g) => {
+            const name = basename(bestSrc(g));
+            return matchesRef(name, ref);
+          });
+          show(idx >= 0 ? idx : 0);
+        });
       });
     }
 

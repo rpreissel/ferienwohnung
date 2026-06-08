@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-// Wohnzimmer
+// Wohn-/Schlafzimmer
 import livingRoom from "../assets/images/living-room.jpg";
 import sofa from "../assets/images/sofa.jpg";
 import desk from "../assets/images/desk.jpg";
@@ -17,11 +17,11 @@ import washerDryer from "../assets/images/washer-dryer.jpg";
 import exterior from "../assets/images/exterior.jpg";
 ---
 
-<section class="gallery" data-lightbox-group="gallery">
-  <!-- Wohnzimmer -->
+<section class="gallery">
+  <!-- Wohn-/Schlafzimmer -->
   <Image
     src={livingRoom}
-    alt="Wohnzimmer mit TV und Dachschräge"
+    alt="Wohn-/Schlafzimmer mit TV und Dachschräge"
     loading="lazy"
     widths={[400, 720, 1200]}
     sizes="(max-width: 600px) 50vw, 25vw"
@@ -29,7 +29,7 @@ import exterior from "../assets/images/exterior.jpg";
   />
   <Image
     src={sofa}
-    alt="Schlafsofa als Doppelbett"
+    alt="Wohn-/Schlafzimmer: Schlafsofa als Doppelbett"
     loading="lazy"
     widths={[400, 720, 1200]}
     sizes="(max-width: 600px) 50vw, 25vw"
@@ -37,7 +37,7 @@ import exterior from "../assets/images/exterior.jpg";
   />
   <Image
     src={desk}
-    alt="Arbeitsplatz und Schlafbereich"
+    alt="Wohn-/Schlafzimmer: Arbeitsplatz"
     loading="lazy"
     widths={[400, 720, 1200]}
     sizes="(max-width: 600px) 50vw, 25vw"
