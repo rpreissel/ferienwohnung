@@ -1,0 +1,120 @@
+<!-- Lightbox Overlay -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau" hidden>
+  <button id="lightbox-close" aria-label="Schließen">&times;</button>
+  <button id="lightbox-prev" aria-label="Vorheriges Bild">&#8592;</button>
+  <button id="lightbox-next" aria-label="Nächstes Bild">&#8594;</button>
+  <div id="lightbox-backdrop"></div>
+  <figure id="lightbox-figure">
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script>
+  (() => {
+    const lightbox = document.getElementById("lightbox") as HTMLElement;
+    const img = document.getElementById("lightbox-img") as HTMLImageElement;
+    const caption = document.getElementById("lightbox-caption") as HTMLElement;
+    const backdrop = document.getElementById("lightbox-backdrop") as HTMLElement;
+    const btnClose = document.getElementById("lightbox-close") as HTMLButtonElement;
+    const btnPrev = document.getElementById("lightbox-prev") as HTMLButtonElement;
+    const btnNext = document.getElementById("lightbox-next") as HTMLButtonElement;
+
+    let images: HTMLImageElement[] = [];
+    let current = 0;
+
+    function collectImages() {
+      images = Array.from(document.querySelectorAll<HTMLImageElement>("img[data-lightbox]"));
+    }
+
+    function show(index: number) {
+      current = (index + images.length) % images.length;
+      const el = images[current];
+
+      // Nutze das src-Attribut des Elements — für srcset nimm das größte verfügbare
+      let src = el.currentSrc || el.src;
+
+      // Versuche aus srcset die größte Variante zu lesen
+      if (el.srcset) {
+        const entries = el.srcset
+          .split(",")
+          .map((s) => s.trim().split(/\s+/))
+          .filter((e) => e.length === 2)
+          .map(([url, w]) => ({ url, width: parseInt(w) }));
+        if (entries.length) {
+          entries.sort((a, b) => b.width - a.width);
+          src = entries[0].url;
+        }
+      }
+
+      img.src = src;
+      img.alt = el.alt;
+      caption.textContent = el.alt;
+
+      // Pfeile nur anzeigen, wenn mehrere Bilder in derselben Gruppe vorhanden
+      const group = el.closest("[data-lightbox-group]");
+      const groupImgs = group
+        ? images.filter((i) => i.closest("[data-lightbox-group]") === group)
+        : images;
+      const showNav = groupImgs.length > 1;
+      btnPrev.hidden = !showNav;
+      btnNext.hidden = !showNav;
+
+      lightbox.hidden = false;
+      document.body.style.overflow = "hidden";
+      btnClose.focus();
+    }
+
+    function hide() {
+      lightbox.hidden = true;
+      document.body.style.overflow = "";
+      img.src = "";
+    }
+
+    function navigate(dir: 1 | -1) {
+      // Navigation nur innerhalb derselben Gruppe
+      const el = images[current];
+      const group = el.closest("[data-lightbox-group]");
+      const groupImgs = group
+        ? images.filter((i) => i.closest("[data-lightbox-group]") === group)
+        : images;
+      const idx = groupImgs.indexOf(el);
+      const newEl = groupImgs[(idx + dir + groupImgs.length) % groupImgs.length];
+      show(images.indexOf(newEl));
+    }
+
+    // Klick-Handler auf alle lightbox-Bilder
+    function bindClicks() {
+      collectImages();
+      images.forEach((el, i) => {
+        el.style.cursor = "zoom-in";
+        el.addEventListener("click", () => show(i));
+      });
+    }
+
+    // Events
+    btnClose.addEventListener("click", hide);
+    backdrop.addEventListener("click", hide);
+    btnPrev.addEventListener("click", () => navigate(-1));
+    btnNext.addEventListener("click", () => navigate(1));
+
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.hidden) return;
+      if (e.key === "Escape") hide();
+      if (e.key === "ArrowLeft") navigate(-1);
+      if (e.key === "ArrowRight") navigate(1);
+    });
+
+    // Touch-Swipe
+    let touchStartX = 0;
+    lightbox.addEventListener("touchstart", (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener("touchend", (e) => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) navigate(dx < 0 ? 1 : -1);
+    }, { passive: true });
+
+    bindClicks();
+  })();
+</script>

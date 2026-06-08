@@ -9,6 +9,7 @@ import Amenities from "../components/Amenities.astro";
 import Location from "../components/Location.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
+import Lightbox from "../components/Lightbox.astro";
 import "../styles/global.css";
 
 const apt = await getEntry("apartment", "apartment");
@@ -62,5 +63,6 @@ const d = apt.data;
     </main>
 
     <Footer registrationNumber={d.registrationNumber} />
+    <Lightbox />
   </body>
 </html>
