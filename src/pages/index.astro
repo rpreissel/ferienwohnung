@@ -24,6 +24,72 @@ const d = apt.data;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{d.seoTitle}</title>
     <meta name="description" content={d.seoDescription} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "additionalType": "Apartment",
+      "identifier": d.registrationNumber,
+      "name": "Ferienwohnung Wellingsbüttel – Hamburg",
+      "description": d.description.paragraphs.join(" "),
+      "url": "https://ferienwohnung.preissel-hh.de/",
+      "latitude": "53.64500",
+      "longitude": "10.07900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Eckerkamp 14",
+        "postalCode": "22391",
+        "addressLocality": "Hamburg",
+        "addressRegion": "Hamburg",
+        "addressCountry": "DE"
+      },
+      "image": [
+        "https://ferienwohnung.preissel-hh.de/images/exterior.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/living-room.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/sofa.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/kitchen-dining.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/bathroom.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/bathroom2.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/desk.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/coffee-machine.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/induction-hob.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/dishwasher.jpg",
+        "https://ferienwohnung.preissel-hh.de/images/washer-dryer.jpg"
+      ],
+      "checkinTime": "15:00:00+02:00",
+      "checkoutTime": "11:00:00+02:00",
+      "knowsLanguage": ["de-DE", "en-US"],
+      "containsPlace": {
+        "@type": "Accommodation",
+        "additionalType": "EntirePlace",
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "value": 2
+        },
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 1,
+        "numberOfRooms": 3,
+        "bed": [{
+          "@type": "BedDetails",
+          "numberOfBeds": 1,
+          "typeOfBed": "Queen"
+        }],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "wifi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "kitchen", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "washerDryer", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "tv", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "heating", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "crib", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "selfCheckinCheckout", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "smokingAllowed", "value": false },
+          { "@type": "LocationFeatureSpecification", "name": "elevator", "value": false },
+          { "@type": "LocationFeatureSpecification", "name": "balcony", "value": false },
+          { "@type": "LocationFeatureSpecification", "name": "internetType", "value": "Free" },
+          { "@type": "LocationFeatureSpecification", "name": "parkingType", "value": "Free" },
+          { "@type": "LocationFeatureSpecification", "name": "licenseNum", "value": d.registrationNumber }
+        ]
+      }
+    })} />
   </head>
   <body>
     <Header brandName="Ferienwohnung Wellingsbüttel" email={d.email} />
