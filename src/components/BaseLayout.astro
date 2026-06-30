@@ -5,9 +5,16 @@ import "../styles/global.css";
 export interface Props {
   title: string;
   description?: string;
+  canonicalUrl?: string;
+  noindex?: boolean;
 }
 
-const { title, description = "Ferienwohnung Hamburg-Wellingsbüttel" } = Astro.props;
+const {
+  title,
+  description = "Ferienwohnung Hamburg-Wellingsbüttel",
+  canonicalUrl,
+  noindex = false,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +24,8 @@ const { title, description = "Ferienwohnung Hamburg-Wellingsbüttel" } = Astro.p
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
   </head>
   <body>
     <header class="topbar">

@@ -24,6 +24,27 @@ const d = apt.data;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{d.seoTitle}</title>
     <meta name="description" content={d.seoDescription} />
+    <link rel="canonical" href="https://ferienwohnung.preissel-hh.de/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ferienwohnung.preissel-hh.de/" />
+    <meta property="og:title" content={d.seoTitle} />
+    <meta property="og:description" content={d.seoDescription} />
+    <meta property="og:image" content="https://ferienwohnung.preissel-hh.de/images/living-room.jpg" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="609" />
+    <meta property="og:image:alt" content="Helles Wohn-/Schlafzimmer der Ferienwohnung Hamburg-Wellingsbüttel" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Ferienwohnung Wellingsbüttel" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={d.seoTitle} />
+    <meta name="twitter:description" content={d.seoDescription} />
+    <meta name="twitter:image" content="https://ferienwohnung.preissel-hh.de/images/living-room.jpg" />
+    <meta name="twitter:image:alt" content="Helles Wohn-/Schlafzimmer der Ferienwohnung Hamburg-Wellingsbüttel" />
+
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "VacationRental",
@@ -32,8 +53,8 @@ const d = apt.data;
       "name": "Ferienwohnung Wellingsbüttel – Hamburg",
       "description": d.description.paragraphs.join(" "),
       "url": "https://ferienwohnung.preissel-hh.de/",
-      "latitude": "53.64500",
-      "longitude": "10.07900",
+      "latitude": 53.64500,
+      "longitude": 10.07900,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Eckerkamp 14",
@@ -57,7 +78,7 @@ const d = apt.data;
       ],
       "checkinTime": "15:00:00+02:00",
       "checkoutTime": "11:00:00+02:00",
-      "knowsLanguage": ["de-DE", "en-US"],
+      "knowsLanguage": ["de-DE"],
       "containsPlace": {
         "@type": "Accommodation",
         "additionalType": "EntirePlace",

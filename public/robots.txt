@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ferienwohnung.preissel-hh.de/sitemap.xml
+Sitemap: https://ferienwohnung.preissel-hh.de/sitemap-vacation-rental.xml
