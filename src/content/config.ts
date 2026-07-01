@@ -35,6 +35,7 @@ const apartmentCollection = defineCollection({
     contact: z.object({
       heading: z.string(),
       text: z.string(),
+      airbnbUrl: z.string().url(),
     }),
   }),
 });
